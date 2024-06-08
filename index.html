@@ -6,16 +6,18 @@
     <title>Khadija Asgar | SEO Specialist & Guest Posting Services</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            background-color: #f0f8ff;
+            color: #333;
         }
         header {
-            background-color: #333;
+            background: linear-gradient(to right, #ff7e5f, #feb47b);
             color: #fff;
             padding: 20px 0;
             text-align: center;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
         }
         .container {
             width: 80%;
@@ -26,12 +28,18 @@
             padding: 20px;
             background: #fff;
             margin-top: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
         }
         h1, h2 {
-            color: #333;
+            color: #ff7e5f;
+        }
+        p {
+            line-height: 1.6;
         }
         .services {
             display: flex;
+            flex-wrap: wrap;
             justify-content: space-between;
             margin-top: 20px;
         }
@@ -40,21 +48,37 @@
             padding: 20px;
             flex: 1;
             margin: 10px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
+            border: 2px solid #ff7e5f;
+            border-radius: 8px;
             text-align: center;
+            transition: transform 0.2s;
+        }
+        .service:hover {
+            transform: scale(1.05);
+            background: #ff7e5f;
+            color: #fff;
         }
         .service h3 {
             margin-top: 0;
+            color: inherit;
         }
         footer {
-            background-color: #333;
+            background: linear-gradient(to right, #feb47b, #ff7e5f);
             color: #fff;
             text-align: center;
             padding: 10px 0;
             position: fixed;
             width: 100%;
             bottom: 0;
+            box-shadow: 0 -4px 8px rgba(0,0,0,0.1);
+        }
+        @media (max-width: 768px) {
+            .services {
+                flex-direction: column;
+            }
+            .service {
+                margin: 10px 0;
+            }
         }
     </style>
 </head>
